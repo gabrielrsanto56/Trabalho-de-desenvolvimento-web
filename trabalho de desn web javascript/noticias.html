@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>wiki games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone_do_site.png" type="image/x-icon">
+    <style>
+      #mainnoticias{
+      width: 70%;
+      margin: auto;
+      margin-top: -150px;
+      }
+      .noticia{
+      display: inline-block;
+      width: 400px;
+      height: 300px;
+      background-color: white;
+      margin: 5px 0px 15px 5px;
+      padding: 10px;
+      transition: 200ms ease-in-out;
+
+      }
+
+      h4{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .noticia:hover{
+      transform: translateY(-10px);
+      }
+
+
+      .carousel-container {
+      width: 750px; /* Set width to 600px */
+      height: 620px; /* Set height to 450px */
+      margin: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: var(--lx-gap);
+      margin-top: -40px;
+
+      .carousel {
+      aspect-ratio: 16/9;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      .item {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: opacity 0.5s ease-in-out;
+
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      }
+
+      .caption {
+      width: 100%;
+      padding: var(--lx-space-01);
+      position: absolute;
+      bottom: 0;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 16px;
+      background-color: rgba(250, 250, 250, 0.842);
+      color: black;
+      }
+
+      &.active {
+      opacity: 1;
+      display: block;
+      }
+      }
+      }
+
+      .btn {
+      padding: 0.5em 0em;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 35%;
+      right: 90%;
+      left: 90%;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 35px;
+      font-weight: 900;
+      color: #ffffff;
+      background-color: #ffffe600;
+      opacity: 0.8;
+
+
+      &:active,
+      &:focus {
+      transform: translateY(-50%) scale(0.9);
+      }
+
+      &:hover {
+      transform: translateY(-50%) scale(0.96);
+      }
+      }
+
+      .prev {
+      margin: -10px 0px 0px -685px;
+      border-radius: 15px 0px 0px 15px;
+      width: 50px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .prev:hover, .next:hover{
+      color: #ff00aa;
+      }
+
+      .next {
+      margin: -10px 0px 0px 35px;
+      border-radius: 0px 15px 15px 0px;
+      width: 50px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+
+      .dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      background-color: #242421;
+      transition: background-color 0.2s ease;
+
+      &.active,
+      &:hover {
+      background-color: #ffffe6;
+      }
+      }
+      }
+      }
+      #pesquisa{
+      margin-top: 50px;
+      }
+      .img{
+      height: 200px;
+      width: 400px;
+      margin: auto;
+      }
+
+    </style>
+  </head>
+  <body id="bodyprincipal">
+    <header id="cabecalho-princiapal">
+      <a href="inicio.html">
+        <h1>WIKIGAMES</h1>
+      </a>
+    </header>
+
+    <div id="separacao">
+    </div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="item active">
+          <a href="https://jovemnerd.com.br/noticias/games/jogos-mais-aguardados-de-2024-expectativas" target="_blank">
+            <img src="foto-principais-lancamentos.png">
+            <p class="caption">Confira os principais lançamentos de jogos de 2024</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://meups.com.br/noticias/gamescom-no-brasil-1o-edicao-no-pais-em-2024/" target="_blank">
+            <img src="foto-feira-de-games.png">
+            <p class="caption">Maior feira de games do mundo terá sua 1º edição no Brasil em 2024</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://dol.com.br/entretenimento/games/860031/desafio-valorant-e-o-estopim-para-os-eventos-games-no-para?d=1" target="_blank">
+            <img src="foto-desafio-valorant.png">
+            <p class="caption">Desafio Valorant é o estopim para os eventos games no Pará</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://www.tudocelular.com/eventos/noticias/n219974/brasil-game-show-segunda-maior-feira-games-nundo.html" target="_blank">
+            <img src="foto-segunda-maior-feira.png"/>
+            <p class="caption">Brasil Game Show é a segunda maior feira de games do mundo, aponta levantamento</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://www.meioemensagem.com.br/midia/the-gaming-era-noticiario-negocios-gamers" target="_blank">
+            <img src="foto-the-gaming-era.png"/>
+            <p class="caption">The Gaming Era: o noticiário sobre negócios gamers no Brasil</p>
+          </a>
+        </div>
+        
+        <div class="item">
+          <a href="https://noticias.portaldaindustria.com.br/noticias/educacao/quero-trabalhar-com-games-o-que-preciso-fazer/" target="_blank">
+            <img src="foto-trabalhar-com-games.jpg"/>
+            <p class="caption">Quero trabalhar com games! O que preciso fazer?</p>
+          </a>
+        </div>
+        
+      </div>
+      <button class="btn prev"><</button>
+      <button class="btn next">></button>
+      <div class="dots"></div>
+    </div>
+
+    </div>
+    
+    <main id="mainnoticias">
+      <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Pesquisar...">
+        <button id="search-button">Buscar</button>
+      </div>
+      <div id="intermediario">
+      </div>
+      <div id="noticia1" class="noticia" style="clear: both;">
+        <img class="img" src="foto-principais-lancamentos.png" alt="">
+        <h4>Confira os principais lançamentos de jogos de 2024</h4>
+        <p>De Final Fantasy VII Rebirth até o acesso antecipado de Hades II... <a href="https://jovemnerd.com.br/noticias/games/jogos-mais-aguardados-de-2024-expectativas" target="_blank">Leia mais</a></p> 
+      </div>
+      <div id="noticia2" class="noticia">
+        <img class="img" src="foto-feira-de-games.png" alt="">
+        <h4>Maior feira de games do mundo terá sua 1º edição no país em 2024</h4>
+        <p>Maior feira de games do mundo terá... <a href="https://meups.com.br/noticias/gamescom-no-brasil-1o-edicao-no-pais-em-2024/" target="_blank">Leia mais</a></p>     
+      </div>
+      <div id="noticia3" class="noticia">
+        <img class="img" src="foto-desafio-valorant.png" alt="">
+        <h4>Desafio Valorant é o estopim para os eventos games no Pará</h4>
+        <p>Belém se destaca com eventos de games... <a href="https://dol.com.br/entretenimento/games/860031/desafio-valorant-e-o-estopim-para-os-eventos-games-no-para?d=1" target="_blank">Leia mais</a></p> 
+      </div>
+      <div id="noticia4" class="noticia">
+        <img class="img" src="foto-segunda-maior-feira.png" alt="">
+        <h4>Brasil Game Show é a segunda maior feira de games do mundo, aponta levantamento</h4>
+        <p>A Brasil Game Show é atualmente... <a href="https://www.tudocelular.com/eventos/noticias/n219974/brasil-game-show-segunda-maior-feira-games-nundo.html" target="_blank">Leia mais</a></p> 
+      </div>
+      <div id="noticia5" class="noticia">
+        <img class="img" src="foto-the-gaming-era.png" alt="">
+        <h4>The Gaming Era: o noticiário sobre negócios gamers no Brasil</h4>
+        <p>Fundado pelo jornalista Marcelo Vieira... <a href="https://www.meioemensagem.com.br/midia/the-gaming-era-noticiario-negocios-gamers" target="_blank">Leia mais</a></p> 
+      </div>
+      <div id="noticia6" class="noticia">
+        <img class="img" src="foto-trabalhar-com-games.jpg" alt="">
+        <h4><b>Quero trabalhar com games! O que preciso fazer?</b></h4>
+        <p>Para celebrar o Dia do Gamer, saiba as competências e dicas indispensáveis para... <a href="https://noticias.portaldaindustria.com.br/noticias/educacao/quero-trabalhar-com-games-o-que-preciso-fazer/" target="_blank">Leia mais</a></p> 
+      </div>
+      
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
