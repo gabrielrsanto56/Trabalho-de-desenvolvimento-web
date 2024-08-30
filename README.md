@@ -6,7 +6,9 @@ Funcionalidades:
 Exibição de Informações de Jogos: Mostra detalhes como tamanho, data de lançamento e público-alvo.
 Descrição do Jogo: Fornece uma descrição detalhada sobre o jogo.
 Interface Intuitiva: Navegação fácil e design responsivo.
+
 Tecnologias Usadas
+
 HTML: Estrutura básica do site.
 CSS: Estilização e design do site.
 JavaScript: Funcionalidades interativas.
