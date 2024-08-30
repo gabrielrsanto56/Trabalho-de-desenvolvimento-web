@@ -7,10 +7,12 @@ Exibição de Informações de Jogos: Mostra detalhes como tamanho, data de lan�
 Descrição do Jogo: Fornece uma descrição detalhada sobre o jogo.
 Interface Intuitiva: Navegação fácil e design responsivo.
 
-Tecnologias Usadas
+Tecnologias Usadas:
 
 HTML: Estrutura básica do site.
+
 CSS: Estilização e design do site.
+
 JavaScript: Funcionalidades interativas.
 
 Como visualizar o projeto:
