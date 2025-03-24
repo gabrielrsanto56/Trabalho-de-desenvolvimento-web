@@ -1,0 +1,71 @@
+body{
+    background-color: #0a0a0f;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(fundoprincipal.jpg)center no-repeat fixed ;
+    background-size: cover;  
+}
+header{
+    height: 100px;
+    display: flex;
+    align-items: end;
+}
+header a{
+    text-decoration: none;
+    margin-left: 8%;
+}
+header h1:hover{
+    text-shadow: 1px 1px 5px black;
+}
+h1{
+    color: white;
+}
+main{
+    text-align: center;
+}
+.faleconosco{
+    border-radius: 10px;  
+    text-shadow: 1px 1px 5px black;
+    width: 30%;
+    height: 70%;
+    align-items: center;
+    
+}
+div{
+    width: 85%;
+    padding-bottom: 20px;
+    margin-top: -15px;
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+input, select, textarea{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(14, 14, 14);
+}
+textarea{
+    max-width: 90%;
+}
+option{
+    color: rgb(48, 48, 48);
+    background-color: rgba(216, 216, 216, 0.767);
+}
+textarea{
+    background-color: rgb(255, 255, 255);
+}
+input, textarea, option{
+    border: none;
+}
+#submit{
+    background: linear-gradient(45deg, #2c2c83, #dd00b1);
+    border: 0.5px solid white;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    padding: 15px;
+    transition: 200ms ease-in-out;
+}
+#submit:hover{
+    scale: 1.1;
+}

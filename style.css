@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+/*inicio das configurações globais*/
+
+body{
+    background-color: #0a0a0f;
+}
+
+h1{
+    color: #ff00aa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    display: inline-block;
+    background-color: transparent;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav > a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: darkorange;
+    text-align: right;
+    padding: 15px;
+    background-color: #030337;
+    border-radius: 6px;
+} 
+
+nav > a:hover{
+    background-color: #030337;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #02022b;
+    color: rgb(194, 108, 3);
+}
+
+p{
+    font-family: sans-serif;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+/*fim das configurações globais*/
+
+/*inicio da pagina inicial*/
+
+#cabecalho-princiapal{
+    background: url(foto\ topo2.jpg) top no-repeat;
+    height: 430px;
+    padding: 20px 50px;
+    margin: -5px;
+    margin-top: -40px;
+    margin-left: -8px;
+
+}
+
+#cabecalho-princiapal h1{
+    margin: 150px 100px 0px 0px;
+    color: aliceblue;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#separacao{
+    margin-top: -60px;
+    height: 100px;
+    width: 100%;
+    margin-left: -8px;
+    padding-right:13px;
+    background: linear-gradient(to bottom, transparent , #0a0a0f 40%);
+}
+
+#intermediario{
+    display: inline-block;
+}
+#pesquisa{
+    width: 87%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: right;
+    
+}
+#generos{
+    color: aliceblue;
+    font-size: 1.2em;
+    background-color: #0a0a0fd7;
+    padding: 0px 15px;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#generos:hover{
+    color: #ff00aa;
+}
+#generos ul{
+    display: none;
+    list-style-type: none;
+    color: aliceblue;
+    margin-left: -10px;
+    font-weight: bold;
+}
+
+#intermediario{
+    width: 73%;
+    margin-left: 13.5%;
+    max-height: 80px;
+}
+#generos:hover ul{
+    display: block;
+    background-color: #0a0a0f00;  
+}
+#generos a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#generos a:hover{
+    color: #ff00aa;
+}
+#generos ul li{
+    padding: 15px;
+    font-size: 0.9em;
+    margin-left: -20px;
+}
+#plataformas{
+    color: aliceblue;
+    font-size: 1.2em;
+    background-color: #0a0a0fd7;
+    padding: 0px 15px;
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#plataformas:hover{
+    color: #ff00aa;
+}
+#plataformas ul{
+    display: none;
+    list-style-type: none;
+    color: aliceblue;
+    margin-left: -10px;
+    font-weight: bold;
+}
+#plataformas:hover ul{
+    display: block;
+    background-color: #0a0a0f00;
+    
+}
+#plataformas a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#plataformas a:hover{
+    color: #ff00aa;
+}
+#plataformas ul li{
+    padding: 15px;
+    font-size: 0.9em;
+    margin-left: -20px;
+}
+#separagenero, #separaplataforma{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;  
+}
+#categoriasjogos a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#categoriasjogos a:hover{
+    color: #ff00aa;
+}
+#pesquisa input{
+    background-color: #050505;
+    border: none;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    float: right;
+    margin-top: -60px;
+    margin-right: -12%;
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+img{
+    border-radius: 5px;
+}
+
+#form_pagina_inicial > #input-principal{
+    background-color: #030337;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin-left: 60px;
+}
+
+#search-container{
+    float: right;
+    margin-right: 14%;
+}
+
+#search-container > input, #search-container button{
+    background-color: #030337;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 10px;
+    border: 0.3px solid white;
+    
+}
+
+
+#search-bar > input, #search-bar button{
+    background-color: #030337;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 10px;
+    border: 0.3px solid white;
+    
+}
+
+#main_pagina_inicial{
+    text-align: center;
+    margin: 0px auto;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jogo{
+    margin: 35px 18px 20px 20px;
+    transition: 200ms ease-in-out;
+}
+.jogo:hover{
+    transform: scale(1.1);
+    
+}
+
+
+.jogo img{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.815);
+}
+.jogo > h1{
+    font-size: 1.3em;
+    margin: 10px 0px 15px 0px;
+}
+
+
+.jogo a{
+    color: rgb(187, 185, 185);
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+#search-container{
+    margin-bottom: 25px;
+}
+
+/*fim da pagina inicial*/
+
+/*inicio configurações globais dos games*/
+
+#main_dos_games{
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 50px;
+    margin-top: -25px;
+}
+
+#cabecalho-princiapal a{
+    text-decoration: none;
+}
+#cabecalho-princiapal h1:hover{
+    
+    text-shadow: 1px 1px 5px black;
+}
+
+#games_global_1{
+    background-color:#09090c;
+    padding: 40px 50px;
+    border-radius: 10px;
+    color: rgb(172, 169, 169);  
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    font-size: 1.3em;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.493);
+
+}
+
+#games_global_1 h1{
+    font-size: 1.5em;
+}
+
+#games_global_2{
+    display: inline-block;
+    position: relative;
+    color: rgb(172, 169, 169);
+    max-width: 850px;
+    margin-left: 5%;
+    text-align: justify;
+    font-size: 1.3em;
+    
+}
+
+
+/*fim configurações globais dos games*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    }
+
+    .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #ff00aa;
+    }
+
+    .title::before {
+    width: 18px;
+    height: 18px;
+    }
+
+    .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+    }
+
+    .title::before,
+    .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #ff00aa;
+    }
+
+    .message, 
+    .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+    }
+
+    .signin {
+    text-align: center;
+    }
+
+    .signin a {
+    color: #ff00aa;
+    }
+
+    /*.flex {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    }*/
+
+    .form label {
+    position: relative;
+    }
+    label{
+        margin-left: -17px;
+    }
+    .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    }
+
+    .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+    }
+
+    .form label .input:focus + span,
+    .form label .input:valid + span {
+    color: #ff00aa;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+    }
+
+    .input {
+    font-size: medium;
+    }
+
+    .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ff00aa;
+    }
+
+    .submit:hover {
+    background-color: #ff00aa96;
+    }
+
+    @keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+    }
+    #fecha{
+        position: absolute;
+        margin-top: -47px;
+        margin-left: 335px;
+    }
+    #fecha:hover{
+        background-size: 0% 0.1em;
+        color:#ff00cc;
+        border-radius: 0.1em;
+    }
+
