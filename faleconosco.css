@@ -1,7 +1,7 @@
 body{
     background-color: #0a0a0f;
     font-family: Arial, Helvetica, sans-serif;
-    background: url(fundoprincipal.jpg)center no-repeat fixed ;
+    background: url(fotos/fundoprincipal.jpg)center no-repeat fixed ;
     background-size: cover;  
 }
 header{
