@@ -243,6 +243,15 @@ img{
     justify-content: center;
 }
 
+#main_pagina_inicial2{
+    text-align: center;
+    margin: 0px auto;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .jogo{
     margin: 35px 18px 20px 20px;
     transition: 200ms ease-in-out;

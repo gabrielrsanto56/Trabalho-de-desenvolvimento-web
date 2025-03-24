@@ -1,3 +1,46 @@
+function carregarJogo(nomeJogo) {
+  fetch('jogos.json')
+      .then(response => response.json())
+      .then(data => {
+          if (data[nomeJogo]) {
+              let jogo = data[nomeJogo];
+
+              // Remove todas as classes de jogo do body
+              document.body.className = '';
+
+              // Adiciona a classe do jogo selecionado (exemplo: 'far-cry-3')
+              let classeJogo = nomeJogo.toLowerCase().replace(/\s/g, '-');
+              document.body.classList.add(classeJogo);
+
+              document.getElementById('conteudo').innerHTML = `
+                  <h1>${jogo.titulo}</h1>
+                  <img src="${jogo.imagem}" alt="${jogo.titulo}">
+                  <p><b>Gênero:</b> ${jogo.genero}</p>
+                  <p><b>Data de Lançamento:</b> ${jogo.lancamento}</p>
+                  <p><b>Plataformas:</b> ${jogo.plataformas}</p>
+                  <p><b>Prêmios:</b> ${jogo.premios}</p>
+                  <p><b>Espaço necessário:</b> ${jogo.espaco}</p>
+                  <p><b>Descrição:</b> ${jogo.descricao}</p>
+                  <p><b>Gameplay:</b> ${jogo.gameplay}</p>
+                  <p><b>Confira o trailer:</b></p>
+                  <iframe width="560" height="315" src="${jogo.trailer}" allowfullscreen></iframe>
+              `;
+
+              // Esconde a lista de jogos
+              document.getElementById('main_pagina_inicial2').style.display = 'block';
+              document.getElementById('main_pagina_inicial2').style.textAlign = 'center';
+              document.getElementById('conteudo-dinamico').style.textAlign = 'left';
+              document.getElementById('conteudo-dinamico').style.display = 'flex';
+              document.getElementById('conteudo-dinamico').style.justifyContent = 'center';
+              document.getElementById('conteudo-dinamico').style.margin = 'auto';
+              document.getElementById('conteudo-dinamico').style.width = '40vw';
+          } else {
+              console.error('Jogo não encontrado.');
+          }
+      })
+      .catch(error => console.error('Erro ao carregar os dados:', error));
+}
+
 //inicio carrossel
 
 document.addEventListener("DOMContentLoaded", function () {
