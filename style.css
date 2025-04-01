@@ -17,7 +17,7 @@ div{
 }
 
 nav{
-    margin-top: 15px;
+    margin: 15px, 0px, 0px, 0px;
 }
 
 nav > a{
